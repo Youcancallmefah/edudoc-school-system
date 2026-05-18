@@ -33,8 +33,8 @@ export default function LoginPage() {
   const router = useRouter();
 
   const homeForRole = (role?: string) => role === 'parent' ? '/parent-portal' : '/dashboard';
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('admin@brightfuture.ac.th');
+  const [password, setPassword] = useState('demo1234');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
